@@ -50,8 +50,7 @@ def get_response(prompt):
     )
     if post_workflow_results_response.status.code != status_code_pb2.SUCCESS:
         print(post_workflow_results_response.status)
-        raise Exception("Post workflow results failed, status: " + post_workflow_results_response.status.description)
-
+       
     # We'll get one WorkflowResult for each input we used above. Because of one input, we have here one WorkflowResult
     results = post_workflow_results_response.results[0]
 
