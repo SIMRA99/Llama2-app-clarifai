@@ -10,11 +10,11 @@ from clarifai_grpc.grpc.api.status import status_code_pb2
 import streamlit as st
 
 # Your PAT (Personal Access Token) can be found in the portal under Authentification
-PAT = b2c8491e43184354b626ec47814457c5
+PAT = ''
 # Specify the correct user_id/app_id pairings
 # Since you're making inferences outside your app's scope
-USER_ID = 'simra99'
-APP_ID = 'Llama2_App_Simra'
+USER_ID = ''
+APP_ID = ''
 # Change these to whatever model and text URL you want to use
 WORKFLOW_ID = 'LegalAI-workflow'
 TEXT_FILE_URL = 'https://samples.clarifai.com/negative_sentence_12.txt'
